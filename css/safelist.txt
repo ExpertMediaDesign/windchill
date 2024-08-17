@@ -1,0 +1,10 @@
+alignfull
+alignwide
+alignnone
+aligncenter
+alignright
+wp-block-button
+wp-caption
+wp-caption-text
+bg-green-500
+bg-red-500

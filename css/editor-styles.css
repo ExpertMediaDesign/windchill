@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/**
+ * Here's where we can write our CSS for use in the editor.
+ *
+ * To use theme.json properties, declare the variables from theme.json.
+ * To use Tailwind classes, use @apply on it's own line. 
+ */
+
+body {
+    @apply font-sans bg-red-500; 
+}
+
+.wp-block{
+    @apply max-w-screen-xl;
+}
+
+.wp-block[data-align=wide] {
+    @apply max-w-screen-xl;
+}
+
+.wp-block[data-align=full] {
+    @apply max-w-full;
+}

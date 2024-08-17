@@ -1,0 +1,72 @@
+/**
+ * Here's where we can write our CSS for use on the front end.
+ *
+ * To use theme.json properties:
+ * If using the FSE Style Editor or Variations, best to use the WP variables directly: var(--wp--preset--...).
+ * We are pulling some utilities automatically from theme.json as outlined in @_tw: https://github.com/gregsullivan/_tw-themejson?tab=readme-ov-file#readme
+ * However that doesn't respect any changes made to the theme style from the FSE. 
+ * We pull just what is set in the theme.json.
+ * 
+ * To use Tailwind classes, use @apply and include all classes in 1 line. 
+ */
+main {
+	@apply bg-background text-foreground;
+}
+
+.wp-block-post-title {
+    font-size: var(--wp--preset--font-size--max-36);
+}
+
+.entry-content, 
+.block-editor-block-list__layout {
+    h1 {
+        @apply text-7xl text-primary; 
+        /* font-size: var(--wp--preset--font-size--max-72); */
+        /* @apply text-primary; */
+        /* color: var(--wp--preset--color--primary); */
+
+    }
+
+    h2 {
+        /* @apply text-5xl font-sans; */
+        font-size: var(--wp--preset--font-size--x-large);
+    }
+
+    h3 {
+        @apply text-3xl;
+    }
+
+    h4 {
+        @apply text-xl;
+    }
+
+    h5 {
+        @apply text-lg;
+    }
+
+    p, ul, ol {
+        a {
+            /* @apply text-blue-500 underline; */
+            color: var(--wp--preset--color--primary);
+            @apply underline;
+
+            &:hover {
+                @apply no-underline;
+            }
+        }
+
+        @apply mb-8;
+    }
+
+    ul:not(.block-editor-block-variation-picker__variations) {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}
