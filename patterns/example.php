@@ -10,8 +10,8 @@
 
 <!-- wp:group {"className":"pattern-example","templateLock":"contentOnly"} -->
 <div class="wp-block-group pattern-example">
-  <!-- wp:heading {"textAlign":"center","textColor":"tertiary"} -->
-  <h2 class="has-text-align-center has-tertiary-color has-text-color">Pattern example</h2>
+  <!-- wp:heading {"textAlign":"center","textColor":"secondary"} -->
+  <h2 class="has-text-align-center has-secondary-color has-text-color">Pattern example</h2>
   <!-- /wp:heading -->
 
   <!-- wp:paragraph {"align":"center","textColor":"primary"} -->

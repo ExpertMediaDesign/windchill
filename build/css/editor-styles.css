@@ -599,20 +599,19 @@ video {
 .font-semibold {
   font-weight: 600;
 }
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+.text-primary {
+  color: var(--wp--preset--color--primary);
 }
 .underline {
   text-decoration-line: underline;
 }
 .alignfull {
-  margin: 2rem calc(50% - 50vw) !important;
-  max-width: 100vw !important;
+  margin: 0 calc(50% - 50vw);
+  max-width: 100vw;
   width: 100vw;
 }
 .alignwide {
-  margin: 2rem 0;
+  margin: 0;
   max-width: 1280px !important;
 }
 .alignnone {

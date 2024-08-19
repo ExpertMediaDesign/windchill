@@ -54,12 +54,14 @@ const tailwind = plugin(function ({addUtilities, addComponents, e, prefix, confi
 
     const alignmentUtilities = {
         '.alignfull': {
-            margin: `${margin[8] || '0.5rem'} calc(50% - 50vw) !important`,
-            maxWidth: '100vw !important',
+            // margin: `${margin[8] || '0.5rem'} calc(50% - 50vw) !important`,
+            // maxWidth: '100vw !important',
+            margin: `0 calc(50% - 50vw)`,
+            maxWidth: '100vw',
             "@apply w-screen": {}
         },
         '.alignwide': {
-            margin: `${margin[8] || '0.5rem'} 0`,
+            margin: `0`,
             "@apply !max-w-wide": {}
         },
         '.alignnone': {

@@ -1,13 +1,12 @@
 /**
  * Here's where we can write our CSS for use on the front end.
  *
- * To use theme.json properties:
- * If using the FSE Style Editor or Variations, best to use the WP variables directly: var(--wp--preset--...).
- * We are pulling some utilities automatically from theme.json as outlined in @_tw: https://github.com/gregsullivan/_tw-themejson?tab=readme-ov-file#readme
- * However that doesn't respect any changes made to the theme style from the FSE. 
- * We pull just what is set in the theme.json.
  * 
  * To use Tailwind classes, use @apply and include all classes in 1 line. 
+ * If adding custom css as well, I think it needs to be below the @apply line.
+ * 
+ * Also have access to theme.json elements through WP variables: var(--wp--preset--color--primary)
+ * 
  */
 main {
 	@apply bg-background text-foreground;
@@ -22,14 +21,13 @@ main {
     h1 {
         @apply text-7xl text-primary; 
         /* font-size: var(--wp--preset--font-size--max-72); */
-        /* @apply text-primary; */
+        /* font-size: var(--wp--preset--font-size--x-large); */
         /* color: var(--wp--preset--color--primary); */
 
     }
 
     h2 {
-        /* @apply text-5xl font-sans; */
-        font-size: var(--wp--preset--font-size--x-large);
+        @apply text-5xl font-sans;
     }
 
     h3 {
@@ -46,16 +44,15 @@ main {
 
     p, ul, ol {
         a {
-            /* @apply text-blue-500 underline; */
-            color: var(--wp--preset--color--primary);
-            @apply underline;
+            @apply text-primary underline;
+            /* color: var(--wp--preset--color--primary); */
 
             &:hover {
                 @apply no-underline;
             }
         }
 
-        @apply mb-8;
+        /* @apply mb-8; */
     }
 
     ul:not(.block-editor-block-variation-picker__variations) {
