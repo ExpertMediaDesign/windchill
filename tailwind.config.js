@@ -1,5 +1,6 @@
 const theme = require('./theme.json');
-const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
+// const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
+const tailpress = require('./resources/tailwindtweaks.js')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

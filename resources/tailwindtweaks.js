@@ -10,7 +10,9 @@ const colorMapper = (colors) => {
     let result = {};
 
     colors.forEach(function(color) {
-        result[''+color.slug+''] = color.color;
+        // result[''+color.slug+''] = color.color;
+
+        result[''+color.slug+''] = 'var(--wp--preset--color--'+color.slug+')';
     });
 
     return result;
