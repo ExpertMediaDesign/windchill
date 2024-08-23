@@ -501,8 +501,15 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.order-first {
+  order: -9999;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -531,11 +538,20 @@ video {
 .h-full {
   height: 100%;
 }
+.max-w-7xl {
+  max-width: 80rem;
+}
+.max-w-xs {
+  max-width: 20rem;
+}
 .list-decimal {
   list-style-type: decimal;
 }
 .list-disc {
   list-style-type: disc;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -546,6 +562,12 @@ video {
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+.gap-y-16 {
+  row-gap: 4rem;
+}
+.gap-y-4 {
+  row-gap: 1rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -573,6 +595,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -580,6 +606,17 @@ video {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.text-center {
+  text-align: center;
 }
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -596,11 +633,36 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .font-semibold {
   font-weight: 600;
 }
+.leading-7 {
+  line-height: 1.75rem;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
 .text-primary {
   color: var(--wp--preset--color--primary);
+}
+.text-base {
+  color: var(--wp--preset--color--base);
+}
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
@@ -711,8 +773,18 @@ body {
     padding-bottom: 4rem;
   }
 
+  .sm\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .sm\:pr-0 {
     padding-right: 0px;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 @media (min-width: 782px) {
@@ -727,5 +799,16 @@ body {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 960px) {
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
