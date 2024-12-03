@@ -8,3 +8,5 @@ wp-caption
 wp-caption-text
 bg-green-500
 bg-red-500
+md:!hidden
+sm:!hidden

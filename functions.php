@@ -25,18 +25,18 @@ function windchill_enqueue_stylesheet() {
  */
 function windchill_register_block_pattern_categories() {
 
+	// register_block_pattern_category(
+	// 	'windchill-page',
+	// 	array(
+	// 		'label'       => __( 'Page', 'windchill' ),
+	// 		'description' => __( 'Create a full page with multiple patterns that are grouped together.', 'windchill' ),
+	// 	)
+	// );
 	register_block_pattern_category(
-		'windchill-page',
+		'windchill-patterns',
 		array(
-			'label'       => __( 'Page', 'windchill' ),
-			'description' => __( 'Create a full page with multiple patterns that are grouped together.', 'windchill' ),
-		)
-	);
-	register_block_pattern_category(
-		'windchill-pricing',
-		array(
-			'label'       => __( 'Pricing', 'windchill' ),
-			'description' => __( 'Compare features for your digital products or service plans.', 'windchill' ),
+			'label'       => __( 'Windchill', 'windchill' ),
+			'description' => __( 'Custom patterns added to theme.', 'windchill' ),
 		)
 	);
 

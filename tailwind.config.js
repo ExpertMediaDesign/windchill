@@ -4,7 +4,7 @@ const tailpress = require('./resources/tailwindtweaks.js')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
+    content: require('fast-glob').sync([
         './*.php',
         './**/*.php',
         './templates/*.html',
@@ -12,7 +12,7 @@ module.exports = {
         './css/*.css',
         './js/*.js',
         './css/safelist.txt'
-    ],
+    ]),
     theme: {
         container: {
             padding: {
